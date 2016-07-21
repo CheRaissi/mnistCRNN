@@ -72,6 +72,8 @@ model.add(Dense(1))
 rmsprop = RMSprop()
 model.compile(loss='mean_squared_error', optimizer=rmsprop)
 
+model.summary()
+
 #run epochs of sampling data then training
 for ep in range(0,nb_epochs):
     X_train       = []
